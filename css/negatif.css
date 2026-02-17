@@ -1,0 +1,14 @@
+body.negatif::before{
+    background-color: black;
+    filter: invert(1);
+}
+
+body.negatif input,
+body.negatif button{
+    background: rgb(115,189,165);
+    color: black;
+}
+
+body.negatif a{
+    color: black;
+}
