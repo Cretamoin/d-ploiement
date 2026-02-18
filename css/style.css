@@ -5,15 +5,6 @@
     border-radius: 50px;
 }
 body{
-    opacity: 0;
-    filter: blur(10px);
-    transition: opacity 0.6s ease, filter 0.6s ease;
-}
-body.loaded{
-    opacity: 1;
-    filter: blur(0);
-}
-body{
     position: relative;
     background-image: url("../images/jk.jpg");
     /* filter: invert(1); */
@@ -26,10 +17,6 @@ body{
     transition: 2s; 
 }
 
-body.loaded #all{
-    transition: 2s;
-    opacity: 1;
-}
 
 button,input{
     border-radius: 70px;
@@ -37,6 +24,7 @@ button,input{
     color: white;
     transition: 2s;
 }
+
 /* fond réel */
 body::before{
     content: "";
@@ -62,8 +50,7 @@ body::before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: 2s ease;
+    /* transition: 2s; */
 }
 
 form{

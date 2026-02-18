@@ -1,6 +1,7 @@
 body.negatif::before{
-    background-color: black;
     filter: invert(1);
+    border-radius: 50px;
+    z-index: -1;
 }
 
 body.negatif input,
