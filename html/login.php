@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+$_SESSION['csrf'] = bin2hex(random_bytes(32));
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +21,7 @@
                 <div id="code">
                     <input type="password" name="code" placeholder="Mot de passe" required id="pwd" class="principal"><input type="checkbox" onclick="pwd.type = this.checked ? 'text' : 'password'" style="margin: 30px;" tabindex="-1">
                 </div>
+                <input type="hidden" name="csrf" value="<?= $_SESSION['csrf'] ?>">
                 <div id="end">
                     <button type="submit" class="principal">Connexion</button>
                 </div>

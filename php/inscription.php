@@ -25,5 +25,5 @@
     $stmt = $pdo->prepare("INSERT INTO users (mail, mdp) VALUES (?, ?)");
     $stmt->execute([$mail, $hash]);
 
-    header("Location: ../html/login.html");
+    header("Location: ../html/login.php");
     exit;
