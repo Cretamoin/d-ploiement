@@ -1,5 +1,5 @@
 <?php
-    $_SESSION['csrf'] = bin2hex(random_bytes(32));
+    require '../php/secure.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="menu.css">
-    <title>RATSIMBAZAFY Lalarijaona Iharintsoa</title>
+    <title>Portfolio</title>
 
 </head>
 <body>
@@ -35,7 +35,8 @@
 
     <footer>
         <div id="autre">
-            <button>Projects</button><button>Life</button>
+            <button>Projects</button>
+            <button>Life</button>
         </div>
 
         <div id="vrai">

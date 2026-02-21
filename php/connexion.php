@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require '/../php/secure.php';
     require 'bd.php';
 
     if (
@@ -11,7 +11,6 @@
 
     if (!isset($_POST['mail'], $_POST['code'])) exit;
 
-    
     $mail = $_POST['mail'];
     $mdp  = $_POST['code'];
 

@@ -1,4 +1,5 @@
 <?php
+    require '/../php/secure.php';
     $env = parse_ini_file(__DIR__.'/../secure/.env');
     
     $name = $env['DB_NAME'];
