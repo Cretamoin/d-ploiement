@@ -1,5 +1,5 @@
 <?php
-    require '../php/secure.php';
+    require __DIR__.'/../php/secure.php';
 ?>
 
 <!DOCTYPE html>

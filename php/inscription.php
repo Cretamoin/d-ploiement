@@ -1,6 +1,5 @@
 <?php
     require 'bd.php';
-    require '/../php/secure.php';
     if (!isset($_POST['mail'], $_POST['code'],  $_POST['verification'])) exit;
 
     $mail = $_POST['mail'];

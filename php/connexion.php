@@ -1,12 +1,11 @@
 <?php
-    require '/../php/secure.php';
+    session_start();
     require 'bd.php';
-
     if (
     !isset($_POST['csrf'], $_SESSION['csrf']) ||
         !hash_equals($_SESSION['csrf'], $_POST['csrf'])
     ) {
-        exit('CSRF');
+        header ("Location: ../html/login.php");
     }
 
     if (!isset($_POST['mail'], $_POST['code'])) exit;

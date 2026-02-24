@@ -1,7 +1,5 @@
 <?php
     session_start();
-    $_SESSION['csrf'] = bin2hex(random_bytes(32));
-    define ('APP', true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
