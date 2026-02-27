@@ -7,18 +7,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="principal.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <title>Portfolio</title>
 
 </head>
 <body>
-    <div id="btn" class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-
+    <button id="btn" class="openbtn" onclick="openNav()">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </button>
     <div id="all">
         <div id="together">
             <div id="nom">
@@ -32,13 +33,14 @@
             <img src="/Portfolio/Images/profie_picture.jpg" alt="" style="width: 400px;">
         </div>
     </div>  
-
+    <div id="hided">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam fugiat, eos dolores animi, deleniti sequi voluptatem ad consectetur debitis modi reprehenderit, dolorem rerum odio doloribus vitae assumenda iure quidem.
+    </div>
     <footer>
         <div id="autre">
-            <button>Projects</button>
-            <button>Life</button>
+            <button class="click">Projects</button>
+            <button class="click">Life</button>
         </div>
-
         <div id="vrai">
             <a href="">Sevices</a>
             <a href="">Contact</a>
@@ -47,5 +49,5 @@
         </div>
     </footer>
 </body>
-<script src="tpe.js"></script>
+<script src="../js/tpe.js"></script>
 </html>
