@@ -43,7 +43,7 @@ body{
 }
 #nom,
 #autre > button {
-    transition: background-color 0.4s ease;
+    transition: background-color 1s ease;
     opacity: 0.3;
 }
 #nom:hover,
