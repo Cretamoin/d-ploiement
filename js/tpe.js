@@ -12,3 +12,15 @@ document.getElementById("deux").addEventListener("mouseleave", ()=>{
     document.getElementById("deux").style.height='10vh';
     document.body.style.backgroundColor='gray';
 });
+document.getElementById("nocturne2").addEventListener("mouseover", ()=>{
+    document.getElementById("nocturne2").style.boxShadow='2px 2px 50px 0  white';
+});
+document.getElementById("nocturne2").addEventListener("mouseleave", ()=>{
+    document.getElementById("nocturne2").style.boxShadow='0 0 0 0 transparent';
+});
+document.getElementById("nocturne1").addEventListener("mouseover", ()=>{
+    document.getElementById("nocturne1").style.boxShadow='2px 2px 50px 0  white';
+});
+document.getElementById("nocturne1").addEventListener("mouseleave", ()=>{
+    document.getElementById("nocturne1").style.boxShadow='0 0 0 0 transparent';
+});
