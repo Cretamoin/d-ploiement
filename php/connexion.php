@@ -29,5 +29,5 @@
 
     session_regenerate_id(true);
     $_SESSION['user_id'] = $user['id'];
-    header("Location: ../Portfolio/principal.php");
+    header("Location: ../Portfolio/principal.html");
     exit;

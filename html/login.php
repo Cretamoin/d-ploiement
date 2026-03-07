@@ -25,7 +25,7 @@
                 </div>
             </form>
         </div>
-        <button id="lien"><a href="sign.html">Créer un compte</a></button>
+        <button id="lien"><a href="sign.php">Créer un compte</a></button>
         
     </div>
     
