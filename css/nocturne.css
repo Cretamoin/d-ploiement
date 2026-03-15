@@ -1,13 +1,9 @@
-#nocturne2{
+#nocturne1,#nocturne2,#nocturne3{
     box-sizing: border-box;
     width: fit-content;
-    height: fit-content;
+    padding: 20px;
     border-radius: 12px;
-    padding: 10px;
 }
-#nocturne1{
-    box-sizing: border-box;
-    width: fit-content;
-    height: fit-content;
-    border: none;
+#nocturne2{
+    width: 70%;
 }

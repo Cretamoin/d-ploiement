@@ -1,8 +1,9 @@
-// Button lien
-document.getElementById("lien").addEventListener("click", (e) => {
-    e.preventDefault();
-    document.body.style.opacity = "0";
-    setTimeout(() => {
-        window.location.href = e.target.href;
-    }, 500);
+document.getElementById("opening").addEventListener("click", () =>{
+    document.getElementById("change").style.display='block';
+    document.getElementById("change").style.transition='0.4'
+});
+document.addEventListener("click", e =>{
+    if(!document.getElementById("endcenter").contains(e.target)){
+        document.getElementById("change").style.display='none';
+    }
 });

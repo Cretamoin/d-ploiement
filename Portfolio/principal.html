@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <title>Portfolio</title>
 
 </head>
+
 <body>
     <header>
         <button id="btn" class="openbtn" onclick="openNav()">
@@ -32,21 +34,77 @@
 
     <footer id="deux">
         <div id="endcenter">
-            HERE WE ARE
+            <p id="opening">HERE WE ARE</p>
+            <form action="../php/redirect.php" id="change">
+                <select name="lien">
+                    <option value="projet 1">1</option>
+                    <option value="projet 2">2</option>
+                </select>
+                <button type="submit">Visiter</button>
+            </form>
         </div>
-        <div id="content">
-            <div id="nocturne1">
+        <div id="figure1">
+            <div id="content">
                 <div id="first">
-                    Mes skills
+                    <div id="nocturne1">
+                        <h4>Mes skills</h4>
+                        <ul>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>PYTHON</li>
+                            <li>NestJS</li>
+                            <li>Mysql</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="second">
+                    <div id="nocturne2">
+                        <h4>Informations personnels</h4>
+                        <ul>
+                            <li>
+                                <p>Je suis un garçon tout à fait normal qui a 18 ans qui vit et est encore dépendant de
+                                    ses parents</p>
+                            </li>
+                            <li>
+                                <p>J'ai 1m74</p>
+                            </li>
+                            <li>
+                                <p>Un peu sportif et qui aime bien les défis et débats</p>
+                            </li>
+                            <li>
+                                <p>J'aime bien aussi les personnes classes</p>
+                            </li>
+                            <li>
+                                <p>J'aime les filles</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div id="second">
-                <div id="nocturne2">
-                    Je suis un simple étudiant en informatique de l'EMIT
+            <div id="third">
+                <div id="nocturne3">
+                    <h4>Centre d'interêt</h4>
+                    <ul>
+                        <li>Basket ball</li>
+                        <li>Musique</li>
+                        <li>Coder</li>
+                        <li>Arts</li>
+                        <li>Arts martiaux</li>
+                        <li>Discuter</li>
+                        <li>Observation</li>
+
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
 </body>
 <script src="../js/tpe.js"></script>
+<script src="../js/liste_magic.js"></script>
+<script src="../js/page.js"></script>
 </html>

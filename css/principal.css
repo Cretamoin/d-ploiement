@@ -23,6 +23,10 @@ footer{
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     height: 10vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    padding: 12px;
 }
 footer div a{
     color: white;
@@ -34,7 +38,6 @@ footer div a{
     margin: 10px;
     border-radius: 15px;
     background: transparent;
-    border-color:#66ccff;
     text-decoration: none;
     border: none;
     transition: 0.4s;
@@ -44,13 +47,28 @@ header{
     background-color:black;
 }
 #endcenter{
-    width: 100vw;
+    width: 95vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    position: sticky;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
     height: fit-content;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+#endcenter > p{
+    transition: 2s;
+}
+#change{
+    display: none;
+    margin: 7px;
+    padding: 7px;
+}
+#opening:hover{
+    cursor: pointer;
 }
 #corp{
     margin-top: 50px;
@@ -61,7 +79,7 @@ header{
 }
 #nom,#image{
     width: 100vw;
-        display: flex;
+    display: flex;
     justify-content: center;
 }
 #image>img{
@@ -73,6 +91,9 @@ header{
     display: flex;
     flex-direction: row;
 }
+h4:hover{
+    text-decoration: underline;
+}
 #deux{
     display: flex;
     flex-direction: column;
@@ -83,9 +104,20 @@ header{
     justify-content: center;
     width: 50vw;
 }
-#second{
+#second,#third{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50vw;
+    margin: 12px;
+    padding: 20px;
+}
+#content > #first > #nocturne1 > ul > li , #second > #nocturne2 > ul > li , #third > #nocturne3 > ul > li{
+    opacity: 0;
+}
+#figure1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
