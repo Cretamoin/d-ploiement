@@ -11,7 +11,8 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="checkbox" onclick="document.body.classList.toggle('negatif')" id="negatifToggle">
+    change
+    <button onclick="document.body.classList.toggle('negatif')" id="negatifToggle">Inversion</button>
     <div id="all">
         <div id="container">
             <form method="POST" action="../php/inscription.php">

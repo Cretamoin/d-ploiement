@@ -13,3 +13,6 @@ body.negatif button{
 body.negatif a{
     color: black;
 }
+#negatifToggle, #negatifToggle{
+    padding: 10px;
+}

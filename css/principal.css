@@ -63,7 +63,8 @@ header{
     transition: 2s;
 }
 #change{
-    display: none;
+    transition: 0.4s;
+    opacity: 0;
     margin: 7px;
     padding: 7px;
 }
