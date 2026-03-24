@@ -1,2 +1,4 @@
 secure/
-secure
+secure.env
+secure/.env
+secure/.env
