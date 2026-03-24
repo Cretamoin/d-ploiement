@@ -1,6 +1,14 @@
+<?php
+    session_start();
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Pragma: no-cache");
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: ../Html/login.php");
+        exit;
+    }
+?> 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +21,19 @@
 
 <body>
     <header>
-        <button id="btn" class="openbtn" onclick="openNav()">
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1" style="background-color: white;"></div>
-                <div class="bar2" style="background-color: white;"></div>
-                <div class="bar3" style="background-color: white;"></div>
-            </div>
-        </button>
+        <form action="../php/logout.php">
+            <button id="btn" class="openbtn" onclick="openNav()">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1" style="background-color: white;"></div>
+                    <div class="bar2" style="background-color: white;"></div>
+                    <div class="bar3" style="background-color: white;"></div>
+                </div>
+            </button>
+        </form>
     </header>
     <div id="corp">
         <div id="nom">
             <h2>
-                RATSIMBAZAFY Lalarijaona Ihariantsoa
             </h2>
         </div>
         <div id="image">
@@ -35,10 +44,10 @@
     <footer id="deux">
         <div id="endcenter">
             <p id="opening">HERE WE ARE</p>
-            <form action="../php/redirect.php" id="change">
+            <form action="../php/redirect.php" id="change" method="GET">
                 <select name="lien">
                     <option value="projet 1" class="viewer">Projet n°1</option>
-                    <option value="projet 2" class="viewer">Projet n°2</option>
+                    <option value="download" class="viewer">CV</option>
                 </select>
                 <button type="submit">Visiter</button>
             </form>

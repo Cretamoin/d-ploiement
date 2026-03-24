@@ -1,5 +1,13 @@
 <?php
+    
     session_start();
+    if (!isset($_SESSION['csrf'])) {
+        $_SESSION['csrf'] = bin2hex(random_bytes(32));
+    }
+    if (isset($_SESSION['user_id'])) {
+        header("Location: ../Portfolio/principal.php");
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +19,7 @@
     <title>Cretamoin</title>
 </head>
 <body>
-    <button onclick="document.body.classList.toggle('negatif')" id="negatifToggle">Inversion</button>
+    <button onclick="document.body.classList.toggle('negatif')" id="negatifToggle">Night mode</button>
     <div id="all">
         <div id="container">    
             <form method="POST" action="../php/connexion.php">

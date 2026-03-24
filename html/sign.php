@@ -12,7 +12,7 @@
 </head>
 <body>
     change
-    <button onclick="document.body.classList.toggle('negatif')" id="negatifToggle">Inversion</button>
+    <button onclick="document.body.classList.toggle('negatif')" id="negatifToggle">Night mode</button>
     <div id="all">
         <div id="container">
             <form method="POST" action="../php/inscription.php">

@@ -9,7 +9,7 @@
     
 
     if(($pwd != $verif)){
-        header("Location: ../html/sign.html?err=inc");
+        header("Location: ../html/sign.php?err=inc");
         exit;
     }
     if (!str_ends_with($mail, '@gmail.com')) {

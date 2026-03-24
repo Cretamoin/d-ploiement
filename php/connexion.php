@@ -6,6 +6,7 @@
         !hash_equals($_SESSION['csrf'], $_POST['csrf'])
     ) {
         header ("Location: ../html/login.php");
+        exit;   
     }
 
     if (!isset($_POST['mail'], $_POST['code'])) exit;
@@ -29,5 +30,6 @@
 
     session_regenerate_id(true);
     $_SESSION['user_id'] = $user['id'];
-    header("Location: ../Portfolio/principal.html");
+    header("Location: ../Portfolio/principal.php");
+    
     exit;
